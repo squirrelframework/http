@@ -94,7 +94,7 @@ class Response
     /**
      * Instanciates a new response with optional status, headers and body.
      *
-     * @param int $status Optional HTTP status.
+     * @param integer $status Optional HTTP status.
      * @param string[string] $headers Optional response headers.
      * @param string $body Optional body.
      */
@@ -191,7 +191,7 @@ class Response
      */
     public function setBody($body)
     {
-        $this->body = (string) $body;
+        $this->body = $body;
         return $this;
     }
 
